@@ -59,22 +59,14 @@ O estudo investiga:
 - **features**: Tabela N:M para atributos
 - **Complexidade**: O(n^k) com múltiplos JOINs
 
-## 🎯 Objetivos Específicos
+## 🎯 Objetivos
 
 1. **Modelagem e Carga de Dados**: Implementar e carregar o dataset em ambos os sistemas
 2. **Execução de Consultas**: Desenvolver consultas estratégicas em ambas as plataformas
 3. **Análise de Desempenho**: Medir tempo de execução e uso de recursos
 4. **Conclusões**: Comprovar vantagens do Neo4j em operações de grafo complexas
 
-## 💡 Casos de Uso - Vantagens do Neo4j
-
-| Aplicação | Problema Resolvido | Vantagem |
-|-----------|-------------------|----------|
-| **Redes Sociais** | Encontrar "amigos de amigos" | Navegação profunda instantânea vs múltiplos JOINs |
-| **Detecção de Fraudes** | Identificar anéis de fraude | Busca eficiente de padrões e loops |
-| **Gerenciamento de Identidade** | Mapear hierarquias complexas | Processa M:N sem limitação de profundidade |
-
-## 📈 Resultados Esperados
+## 📈 Resultados
 
 O Neo4j demonstra superioridade significativa em:
 
@@ -82,7 +74,7 @@ O Neo4j demonstra superioridade significativa em:
 - **Performance**: Ordens de magnitude mais rápido em relações complexas
 - **Escalabilidade**: Desempenho linear (O(N)) vs exponencial (O(n^k)) do MySQL
 
-### Ponto de Inflexão
+### Observação:
 
 Em consultas com profundidade > 2 graus, o Neo4j mantém desempenho constante enquanto o MySQL degrada exponencialmente.
 
@@ -90,16 +82,9 @@ Em consultas com profundidade > 2 graus, o Neo4j mantém desempenho constante en
 
 ```bash
 # Clone o repositório
-git clone [url-do-repositorio]
-
 # Importe os dados no MySQL
-mysql -u root -p < mysql_schema.sql
-
 # Importe os dados no Neo4j
-# [instruções específicas de importação]
-
 # Execute as consultas comparativas
-# [scripts de teste]
 ```
 
 ## 📝 Conclusão
@@ -107,13 +92,14 @@ mysql -u root -p < mysql_schema.sql
 Este estudo fornece base técnica para escolha da tecnologia adequada em projetos de Big Data orientados a relacionamentos, demonstrando que o Neo4j é indiscutivelmente superior ao MySQL quando a relação entre os dados é o foco principal da análise.
 
 ## 👥 Autores
+- CLARISSA ERI MORITA
+- GIOVANNA DORNELLES BARICHELLO
+- ISABELLA VICENTE
+- JOÃO PEDRO QUEIROZ DEGER
+- PETERSON ALMEIDA FONTINHAS
 
-[Seus nomes aqui]
+
 
 ## 📄 Licença
-
-[Tipo de licença]
-
----
 
 **Nota**: Este é um projeto acadêmico com fins educacionais e de pesquisa.
